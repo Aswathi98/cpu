@@ -1,0 +1,23 @@
+<head>
+    <title>System Monitoring</title>
+</head>
+<body>
+    <h1>Sysem Monitoring</h1>
+    {{> line1}}
+</body>
+<template name="home">
+    <button class="btn btn-primary">Insert</button>
+    <div id="pieChart" style="width: 100%; height: 100%">
+    </div>
+</template>
+
+<template name="line1">
+   <!-- <button class="btn btn-primary">Insert</button>-->
+<div id="lineChart1" style="width: 100%; height: 100%">
+   </div>
+<select id="cpuLoad" onchange="cpu()">
+<option value="" selected="selected" disabled="disabled">-- select one --</option>
+   <option value="1">cpu-load-1m</option>
+<option value="2">cpu-load-5m</option>
+ </select> 
+</template>
